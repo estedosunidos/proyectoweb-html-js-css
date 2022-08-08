@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+{%load static%}
+{% block body %}
+<h1>  contacto</h1>
+<div class="contenedorFormulario">
+  {% if "valido" in request.GET%}
+    <p> informacion enviada correctamente</p>
+  {% endif %}
+  <form action="" method="POST" style="text-align:center;">
+    {% csrf_token %} 
+    <table style="color:white;margin:20px auto;">{{miformulario.as_table}}</table>
+    <input type="submit" value="ENVIAR" style="width:30%;">
+  </form>
+</div>
+  {% endblock %}

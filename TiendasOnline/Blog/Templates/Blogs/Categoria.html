@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+{%load static%}
+{% block body %}
+    {% for post in post %}
+        <div>
+          <h2 style="color:white">{{post.titulo}}</h2>
+          <p style="color:white">{{post.contenido}}</p>
+          <p><img src="{{post.imagen.url}}"></p>
+        </div>
+    {% endfor %} 
+{% endblock %}

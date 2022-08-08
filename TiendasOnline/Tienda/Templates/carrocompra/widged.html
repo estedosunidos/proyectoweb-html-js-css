@@ -1,0 +1,54 @@
+<doctotype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <table class="table table-bordered" style="color:white">
+            <thead>
+                <tr>
+                    <th colspan="3" class="text-center">
+
+                            Carro compra
+                    </th>
+                </tr>
+               <tr>
+                    <th>Producto</td>
+                    <th>Cantidad</th>
+                    <th>Suma</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if  request.seccion.carrocompra.item %}
+                    {% for key,value in request.seccion.carrocompra.items %}
+                        <tr class="text-center">
+                            <td>{{value.nombre}}</td>
+                            <td>{{value.catidad}}</td>
+                            <td>
+                                <a href="{% url 'carro:agregar' value.producto_id %}" class="btn btn.sm btn-success">+</a>
+                                <a href="{% url 'carro:restae' value.producto_id %}" class="btn btn.sm btn-success">-</a>
+                                <br/>
+                                {{value.precio}} $
+                        
+                            </td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="3">
+                            <div class="alert alert-danger text-center">
+                                sin producto
+                            </div>
+                        </td>
+                    </tr>
+                {% endif %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                       <!---- total: {{ importe_total_Carro}} !---->
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

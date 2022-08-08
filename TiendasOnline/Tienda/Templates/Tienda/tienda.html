@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{%load static%}
+{% block body %}
+<div class="container">
+  <div style="float:right;">
+    <p style="color:white">Total: 0</p>
+    {% include "carrocompra/widged.html" %}  
+
+  </div>
+  <div class="row">
+    {% for producto in producto %}
+        <div class="col-md-3">
+          <div class="card" style="witd=20%; margin:10px 10px;">
+            <img src="{{ producto.imagen.url}}" class="card-img-top">
+            <div class="card-body" style="text-align: center;">
+                <h7 class="card-title">{{ producto.nombre}}</h7>
+                <p class="card-text">{{ producto.precio}}</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-success">Agregar al carro</a>
+              </div>    
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}

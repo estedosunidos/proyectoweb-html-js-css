@@ -1,0 +1,12 @@
+body{
+    background: url('../img/image1.jpg');
+    background-attachment: fixed;
+}
+#logo{
+    background-color:green;
+}
+#menu ul li:hover{
+    background: green;
+    color: aliceblue;
+
+}

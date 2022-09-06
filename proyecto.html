@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto web</title>
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--Mis script-->
+    <script src="C:/Users/ested/Desktop/Proyecto html,js,css/js/proyecto.js"></script>
+    <!--Estilos css-->
+    <link rel="stylesheet" type="text/css"
+        href="C:/Users/ested/Desktop/Proyecto html,js,css/css/proyecto.css" />
+    <link id="theme"rel="stylesheet" type="text/css"
+        href="C:/Users/ested/Desktop/Proyecto html,js,css/css/green.css" />
+</head>
+
+<body>
+    <div id="change_theme">
+        <div id="to-blue"></div>
+        <div id="to-red"></div>
+        <div id="to-gree"></div>
+    </div>
+    <section id="global">
+        <header>
+            <div id="logo">
+                <h1>Proyecto js</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Reloj</a></li>
+                    <li><a href="#">sobre mi</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!---Galeria-->
+        <div class="bxslider">
+            <div><img src="../Proyecto html,js,css/img/Galeria2.jpg"></div>
+            <div><img src="../Proyecto html,js,css/img/Galeria3.jpg" title="The long and winding road"></div>
+            <div><img src="../Proyecto html,js,css/img/galeria4.jpg" title="Happy trees"></div>
+        </div>
+        <!--contenido-->
+        <section id="contend">
+            <div id="posts">
+                <article class="post">
+                    <h2>Parcticando js</h2>
+                    <span class="fecha">Fecha de publicacion </span>
+                    <h1>Lorem ipsum </h1>
+                    <p>
+                        <!----Post cargado desde un json-->
+                    </p>
+                </article>
+            </div>
+            <!---Slider-->
+            <aside id="slider">
+                <div id="about">
+                    <h4>Quien soy</h4>
+                    <img src="" />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,t.</p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form>
+                        <label for="name">
+                            Nombre
+                        </label>
+                        <input type="text" name="name" />
+                        <label for="correo">
+                            correo
+                        </label>
+                        <input type="email" name="email" />
+                        <label for="password">
+                            contraseña
+                        </label>
+                        <input type="password" name="password" />
+                        <input type="submit" name="Entra" />
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix">
+
+            </div>
+        </section>
+    </section>
+    <footer id="pie_pagina">
+        Derecho de autor: Ivan vargas
+        <a href="#" class="up">ir arriba</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    padding: 50px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#logo{
+    display: block;
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: azure;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    float: left;
+    margin-bottom: 20px;
+    line-height: 80px;
+
+}
+
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: currentColor;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;    
+    text-align: center;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+
+}
+
+#menu ul li{
+
+    height: 46px;
+    display: inline-block;
+    transition:  all 300ms;
+}
+
+#menu a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family:'Courier New', Courier, monospace;
+}
+.post{
+    padding: 7px;
+}
+
+.post h2{
+    font-size: 40px;
+    color: currentColor;
+}
+.post .fecha {
+    display:block;
+    color: gray;
+    margin-top: 10 px;
+}
+.post p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+#slider{
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    width: 31%;
+}
+#slider h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    padding: 5px;
+    border-radius: 2px;
+    border-color:#ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray;
+
+}
+form input[type="submit"]{
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor:pointer
+}
+#pie_pagina{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(5, 5, 5);
+    width: 70%;
+    margin: 0px auto;
+    background:white;
+    margin-top: 5px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+.bx-wrapper,.bx-viewport{
+    height: 250px !important;
+}
+#change_theme{
+    position: fixed;
+    top: 40%;
+    background:  rgba(51,51,51,0.5);
+    width: 50px;
+    height: 100px;;
+}
+#to-red,
+#to-gree,
+#to-blue{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin:0px auto;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#to-red{
+    background-color: red;
+}
+
+#to-gree{
+    background-color:darkgreen;
+}
+
+#to-blue{
+    background-color: skyblue;
+}
+
